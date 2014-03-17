@@ -6,6 +6,7 @@ module position_rectange(length, width, clearance = 0) {
 	}
 }
 
+// Position n instances of child around a circle or radius r, starting at angle offset.
 module position_circle(r, n, offset = 0) {
 	for( i = [0 : n - 1] ) {
 		rotate([0, 0, i*360/n + offset]) {
