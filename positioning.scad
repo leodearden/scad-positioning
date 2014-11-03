@@ -1,4 +1,4 @@
-module position_rectange(length, width, clearance = 0) {
+module position_rectangle(length, width, clearance = 0) {
 	for(x = [ clearance, length - clearance ]) {
 		for(y = [ clearance, width - clearance ]) {
 			translate([x, y, 0]) child();
